@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CityInfo.Api.Entities;
+using CityInfo.Api.Model;
+using CityInfo.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -47,6 +49,7 @@ namespace CityInfo.Api
             // Note that the Configuration property includes any variables from environment vars - see project debug properties in VS
             var connectionString = Configuration["connectionStrings:CityInfoContextConnectionString"];
             services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +72,17 @@ namespace CityInfo.Api
             app.UseHttpsRedirection();
             app.UseStatusCodePages();
             app.UseMvc();
+
+            AutoMapper.Mapper.Initialize(cfg =>
+                {
+                    cfg.CreateMap<City, CityNoPointsOfInterest>();
+                    cfg.CreateMap<City, CityDto>();
+                    cfg.CreateMap<PointOfInterest, PointOfInterestDto>();
+                    cfg.CreateMap<PointOfInterestForCreationDto, PointOfInterest>();
+                    cfg.CreateMap<PointOfInterestForUpdateDto, PointOfInterest>();
+                    cfg.CreateMap<PointOfInterest, PointOfInterestForUpdateDto>();
+                }
+            );
         }
     }
 }
