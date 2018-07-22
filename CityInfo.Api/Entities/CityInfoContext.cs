@@ -29,5 +29,22 @@ namespace CityInfo.Api.Entities
 
         //    base.OnConfiguring(optionsBuilder);
         //}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Only works with a migration OR EnsureCreated :(
+            modelBuilder.Entity<City>().HasData(
+                new City()
+                {
+                    Id = 1,
+                    Name = "Leeds",
+                    Description = "Capital of yorkshire",
+                });
+
+            modelBuilder.Entity<PointOfInterest>().HasData(
+                new {Id = 1, CityId =1 , Name = "Royal Armories", Description = "Lots of swords and stuff"});
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
