@@ -14,6 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
+        "connectionStrings:CityInfoContextConnectionString": "Server=tcp:hst-default.database.windows.net,1433; Initial Catalog=CityInfo; Persist Security Info=False; User ID=John; Password=Password1!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
