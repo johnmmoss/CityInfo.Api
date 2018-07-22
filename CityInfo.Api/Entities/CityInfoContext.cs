@@ -44,6 +44,12 @@ namespace CityInfo.Api.Entities
             modelBuilder.Entity<PointOfInterest>().HasData(
                 new {Id = 1, CityId =1 , Name = "Royal Armories", Description = "Lots of swords and stuff"});
 
+            modelBuilder.Entity<City>().HasData(
+                new City() {Id = 500, Name = "London", Description = "Capital of UK"});
+
+            modelBuilder.Entity<PointOfInterest>().HasData(
+                new {Id = 2, CityId = 500 , Name = "Westminister", Description = "Parliement and stuff"});
+
             base.OnModelCreating(modelBuilder);
         }
     }
