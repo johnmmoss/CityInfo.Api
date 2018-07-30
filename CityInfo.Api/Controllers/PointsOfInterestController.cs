@@ -181,7 +181,7 @@ namespace CityInfo.Api.Controllers
 
             patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
 
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) // Check is performed againest the JsonPatchDocument as a model
             {
                 return BadRequest(ModelState);
             }
@@ -191,9 +191,9 @@ namespace CityInfo.Api.Controllers
                 ModelState.AddModelError("Description", "Description must not be the same as the name.");
             }
 
-            TryValidateModel(pointOfInterestToPatch);
+            TryValidateModel(pointOfInterestToPatch); // Force validation to occur againest the correct object
 
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid)  // Check that the correct object is now valid.
             {
                 return BadRequest(ModelState);
             }
