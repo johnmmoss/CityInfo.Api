@@ -1,0 +1,77 @@
+2019-09-03 19:35:30,169 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:35:30,169 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:35:30,215 [7] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:35:30,227 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 56.4101ms 200 
+2019-09-03 19:35:30,311 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.8978ms 404 text/plain
+2019-09-03 19:35:30,374 [13] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/favicon.ico  
+2019-09-03 19:35:30,379 [13] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.8552ms 404 text/plain
+2019-09-03 19:35:39,227 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/api/place  
+2019-09-03 19:35:39,260 [8] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetPlaces", controller = "Place"}. Executing action CityInfo.Api.Controllers.PlaceController.GetPlaces (Api)
+2019-09-03 19:35:39,482 [8] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method CityInfo.Api.Controllers.PlaceController.GetPlaces (Api) - Validation state: Valid
+2019-09-03 19:35:42,883 [8] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 2.1.11-servicing-32099 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-03 19:35:43,131 [8] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Name], [x].[Population], [x].[TypeId]
+FROM [Place] AS [x]
+ORDER BY [x].[Name]
+2019-09-03 19:36:37,240 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:36:37,240 [12] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:36:37,286 [10] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:36:37,295 [12] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.9225ms 200 
+2019-09-03 19:36:37,377 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 138.6234ms 404 text/plain
+2019-09-03 19:36:46,934 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/api/place  
+2019-09-03 19:36:46,970 [7] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetPlaces", controller = "Place"}. Executing action CityInfo.Api.Controllers.PlaceController.GetPlaces (Api)
+2019-09-03 19:36:47,105 [7] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method CityInfo.Api.Controllers.PlaceController.GetPlaces (Api) - Validation state: Valid
+2019-09-03 19:40:24,779 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:40:24,779 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:40:24,822 [8] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:40:24,835 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 53.8892ms 200 
+2019-09-03 19:40:24,916 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 143.1767ms 404 text/plain
+2019-09-03 19:43:57,678 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:43:57,678 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:43:57,716 [8] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:43:57,726 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.7978ms 200 
+2019-09-03 19:43:57,816 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 139.1406ms 404 text/plain
+2019-09-03 19:44:14,406 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:44:14,406 [11] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:44:14,446 [10] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:44:14,457 [11] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.3532ms 200 
+2019-09-03 19:44:14,553 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 143.8212ms 404 text/plain
+2019-09-03 19:45:41,604 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:45:41,604 [12] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:45:41,645 [12] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:45:41,656 [7] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.3743ms 200 
+2019-09-03 19:45:41,736 [12] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 136.8212ms 404 text/plain
+2019-09-03 19:50:37,868 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:50:37,868 [11] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:50:37,910 [11] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:50:37,922 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.9131ms 200 
+2019-09-03 19:50:38,010 [11] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.9352ms 404 text/plain
+2019-09-03 19:50:44,855 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/api/place  
+2019-09-03 19:50:44,883 [8] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetPlaces", controller = "Place"}. Executing action CityInfo.Api.Controllers.PlaceController.GetPlaces (Api)
+2019-09-03 19:50:45,021 [8] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method CityInfo.Api.Controllers.PlaceController.GetPlaces (Api) - Validation state: Valid
+2019-09-03 19:51:04,646 [8] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 2.1.11-servicing-32099 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-03 19:51:04,871 [8] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Name], [x].[Population], [x].[TypeId]
+FROM [Places] AS [x]
+ORDER BY [x].[Name]
+2019-09-03 19:51:04,913 [8] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method CityInfo.Api.Controllers.PlaceController.GetPlaces (Api), returned result Microsoft.AspNetCore.Mvc.OkResult in 19885.4089ms.
+2019-09-03 19:51:04,921 [8] INFO Microsoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-09-03 19:51:04,928 [8] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action CityInfo.Api.Controllers.PlaceController.GetPlaces (Api) in 20039.2492ms
+2019-09-03 19:51:04,937 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20082.0315ms 200 
+2019-09-03 19:52:18,605 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/  
+2019-09-03 19:52:18,605 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:59027/  0
+2019-09-03 19:52:18,644 [8] WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2019-09-03 19:52:18,654 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.739ms 200 
+2019-09-03 19:52:18,744 [8] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 139.1483ms 404 text/plain
+2019-09-03 19:52:21,748 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:59027/api/place  
+2019-09-03 19:52:21,773 [10] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetPlaces", controller = "Place"}. Executing action CityInfo.Api.Controllers.PlaceController.GetPlaces (Api)
+2019-09-03 19:52:21,899 [10] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method CityInfo.Api.Controllers.PlaceController.GetPlaces (Api) - Validation state: Valid
+2019-09-03 19:52:24,149 [10] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 2.1.11-servicing-32099 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-09-03 19:52:24,381 [10] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Name], [x].[Population], [x].[TypeId]
+FROM [Places] AS [x]
+ORDER BY [x].[Name]
+2019-09-03 19:52:24,425 [10] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method CityInfo.Api.Controllers.PlaceController.GetPlaces (Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2518.5712ms.
+2019-09-03 19:52:24,436 [10] INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.Data.Entities.Place, CityInfo.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-09-03 19:52:24,496 [10] INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action CityInfo.Api.Controllers.PlaceController.GetPlaces (Api) in 2717.0969ms
+2019-09-03 19:52:24,507 [10] INFO Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2760.8155ms 200 application/json; charset=utf-8
